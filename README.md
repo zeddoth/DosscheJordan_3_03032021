@@ -1,2 +1,2 @@
 # DosscheJordan_3_03032021
-Projet 3 de la formation OpenClassrooms , site OhMyFood
+Projet 3 de la formation OpenClassrooms ( OhMyFood ) format mobile en priorité
