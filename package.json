@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood-site",
+  "version": "1.0.0",
+  "description": "Site de repas en ligne",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss:public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeddoth/DosscheJordan_3_03032021.git"
+  },
+  "author": "Zeddoth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeddoth/DosscheJordan_3_03032021/issues"
+  },
+  "homepage": "https://github.com/zeddoth/DosscheJordan_3_03032021#readme"
+}
