@@ -5,7 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="public/css/style.css" />
+    <script src="https://kit.fontawesome.com/493b02219a.js" crossorigin="anonymous"></script>
     <title>OhMyFood - Accueil</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1>
+        <img class="header_logo" src="images/logo/ohmyfood@2x.svg" />
+      </h1>
+    </header>
+    <div class="location">
+      <div class="location_marker"><i class="fas fa-map-marker-alt"></i></div>
+      <div class="location_city">
+        <select name="city" class="location_selector">
+          <option value="0">Selectionner votre ville</option>
+          <option value="Paris">Paris, Bellevile</option>
+          <option value="Nancy">Nancy, Place Stanislas</option>
+          <option value="Epinal">Epinal, Place des Vosges</option>
+        </select>
+      </div>
+    </div>
+    <section class="reservation">
+      <h2 class="reservation_h2">Réservez le menu qui vous convient</h2>
+      <p class="reservation_p">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+      <a class="reservation_btn">Explorer nos restaurants</a>
+    </section>
+    <section class="fonctionnement">
+      <h2 class="fonctionnement_h2">Fonctionnement</h2>
+      <div class="fonctionnement_card">
+        <div class="fonctionnement_card_number">
+          <p>1</p>
+        </div>
+        <div class="fonctionnement_card_icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <p class="fonctionnement_card_description">Choisisez un restaurant</p>
+      </div>
+      <div class="fonctionnement_card">
+        <div class="fonctionnement_card_number">
+          <p>2</p>
+        </div>
+        <div class="fonctionnement_card_icon">
+          <i class="fas fa-list-ul"></i>
+        </div>
+        <p class="fonctionnement_card_description">Composez votre menu</p>
+      </div>
+      <div class="fonctionnement_card">
+        <div class="fonctionnement_card_number">
+          <p>3</p>
+        </div>
+        <div class="fonctionnement_card_icon">
+          <i class="fas fa-store"></i>
+        </div>
+        <p class="fonctionnement_card_description">Dégustez au restaurant</p>
+      </div>
+    </section>
+  </body>
 </html>

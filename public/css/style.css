@@ -149,6 +149,107 @@
 }
 body {
   font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  padding: 0.5rem 0;
+  box-shadow: inset 0px 5px 10px -10px #00000080;
+}
+.location_marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 1rem;
+}
+.location_selector {
+  margin: 1rem 0;
+  background-color: #eaeaea;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  appearance: none;
+  text-align: center;
+}
+
+.reservation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  flex-direction: column;
+  padding-bottom: 3rem;
+}
+.reservation_h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.reservation_p {
+  text-align: center;
+}
+.reservation_btn {
+  margin-top: 1rem;
+  border-radius: 30px;
+  background: linear-gradient(350deg, #9356dc, #ff79da);
+  color: white;
+  padding: 1rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.fonctionnement {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.fonctionnement_card {
+  width: 80%;
+  background-color: #f6f6f6;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.fonctionnement_h2 {
+  padding-left: 1rem;
+}
+.fonctionnement_card {
+  padding: 0.7rem 0;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.fonctionnement_card_icon {
+  padding: 0 1rem;
+}
+.fonctionnement_card_number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -10px;
+  border-radius: 100%;
+  background-color: #9356dc;
+  height: 1.5rem;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  color: white;
+  font-weight: normal;
+  font-size: 0.8rem;
 }
 
 /*# sourceMappingURL=style.css.map */

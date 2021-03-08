@@ -2,6 +2,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 // FIN DE POLICE
+
 body {
   font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  @include flexcenter;
+}
+.location {
+  @include flexcenter;
+  background-color: $color-back-location;
+  padding: 0.5rem 0;
+  box-shadow: inset 0px 5px 10px -10px #00000080;
+  &_marker {
+    @include flexcenter;
+    padding-right: 1rem;
+  }
+  &_selector {
+    margin: 1rem 0;
+    background-color: $color-back-location;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    appearance: none;
+    text-align: center;
+  }
+}
+.reservation {
+  @include flexcenter;
+  background-color: $color-back;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  &_h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  &_p {
+    text-align: center;
+  }
+  &_btn {
+    margin-top: 1rem;
+    @include btn;
+  }
+}
+
+.fonctionnement {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  &_card {
+    @include fonctionnement_card;
+  }
+  &_h2 {
+    padding-left: 1rem;
+  }
+  &_card {
+    padding: 0.7rem 0;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  &_card_icon {
+    padding: 0 1rem;
+  }
+  &_card_number {
+    @include flexcenter;
+    position: relative;
+    left: -10px;
+    border-radius: 100%;
+    background-color: $color-primary;
+    height: 1.5rem;
+    width: 1.5rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
+    color: white;
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
 }

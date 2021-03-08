@@ -1,1 +1,23 @@
 // ------------- LES MIXINS ICI -------------
+@mixin btn {
+  border-radius: 30px;
+  background: linear-gradient(350deg, $color-primary, $color-secondary);
+  color: white;
+  padding: 1rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 10%);
+  text-align: center;
+}
+@mixin flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin fonctionnement_card {
+  width: 80%;
+  background-color: $color-back;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 10%);
+}
