@@ -4,12 +4,13 @@
 @import "./utils/variables";
 @import "./utils/functions";
 @import "./utils/mixins";
+@import "./utils/animations";
 @import "./utils/extensions";
 
 // ------------- A AJOUTER AU BESOIN DANS CET ORDRE -------------
 
 // ------------- BASE -------------
-// @import "./base/base";
+@import "./base/base";
 // @import "./base/typography";
 // ------------- COMPONENTS -------------
 // @import "./components/buttons";
