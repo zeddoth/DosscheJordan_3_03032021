@@ -46,15 +46,30 @@ body {
   &_btn {
     margin-top: 1rem;
     @include btn;
+    transition: all 0.2s;
+  }
+  &_btn:hover {
+    transform: scale(1.02);
+    transition: all 0.2s;
   }
 }
-
 .fonctionnement {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   &_card {
     @include fonctionnement_card;
+    margin-left: 10%;
+    margin-right: 10%;
+    transition: all 0.3s;
+  }
+  &_card:hover {
+    background-color: $color-card-hover;
+    transition: background-color 0.3s;
+  }
+  &_card:hover &_card_icon {
+    color: $color-primary;
+    transition: color 0.3s;
   }
   &_h2 {
     padding-left: 1rem;
@@ -82,4 +97,105 @@ body {
     font-weight: normal;
     font-size: 0.8rem;
   }
+}
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  &_h2 {
+    justify-content: flex-start;
+    padding-left: 1rem;
+  }
+  &_card {
+    @include flexcenter;
+    margin: 0 1rem;
+    transition: transform 1s;
+  }
+  &_card:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s;
+  }
+  &_card_container {
+    position: relative;
+    background-color: white;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    max-width: 400px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 5%);
+  }
+  &_card_image_container {
+    display: absolute;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &_card_description {
+    height: 30%;
+    padding-left: 1rem;
+  }
+  &_card_image--size {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  &_card_h3 {
+    margin: 0;
+    margin-top: 1rem;
+  }
+  &_card_p {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  &_card_like {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+}
+.footer {
+  background-color: $color-footer;
+  display: flex;
+  flex-direction: column;
+  &_icon {
+    padding-right: 1rem;
+    width: 1rem;
+    height: 1rem;
+  }
+  &_links {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+  }
+  &_links:hover {
+    font-weight: bold;
+  }
+  &_links_container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  &_logo {
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    height: 1rem;
+    filter: invert(1);
+  }
+}
+.heart-main {
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: visible;
+  fill: transparent;
+  stroke: black;
+  stroke-width: 15px;
+  cursor: pointer;
+}
+.heart-main:hover {
+  overflow: visible;
+  fill: url(#Gradient1);
+  stroke-opacity: 0;
+  animation: pulse-heart 1s;
+  transition: stroke-opacity 1s, fill 1s;
 }
