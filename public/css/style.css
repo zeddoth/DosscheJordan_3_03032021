@@ -147,5 +147,8 @@
     transform: scale(1);
   }
 }
+body {
+  font-family: Roboto, Arial, sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */
