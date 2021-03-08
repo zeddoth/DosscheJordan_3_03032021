@@ -164,16 +164,16 @@ body {
     @include a_without_style;
   }
   &_card {
-    cursor: pointer;
     @include flexcenter;
     margin: 0 1rem;
     transition: transform 1s;
   }
-  &_card:hover {
+  &_card_container:hover {
     transform: scale(1.02);
     transition: transform 0.2s;
   }
   &_card_container {
+    cursor: pointer;
     position: relative;
     background-color: white;
     border-radius: 25px;

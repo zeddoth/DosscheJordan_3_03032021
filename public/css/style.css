@@ -336,18 +336,18 @@ body {
   color: black;
 }
 .restaurants_card {
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 1rem;
   transition: transform 1s;
 }
-.restaurants_card:hover {
+.restaurants_card_container:hover {
   transform: scale(1.02);
   transition: transform 0.2s;
 }
 .restaurants_card_container {
+  cursor: pointer;
   position: relative;
   background-color: white;
   border-radius: 25px;
