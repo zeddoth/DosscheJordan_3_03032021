@@ -19,3 +19,7 @@
   border-radius: 15px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 10%);
 }
+@mixin a_without_style {
+  text-decoration: none;
+  color: black;
+}

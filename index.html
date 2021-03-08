@@ -9,19 +9,19 @@
     <title>OhMyFood - Accueil</title>
   </head>
   <body>
-    <div class="loader">
+    <!-- <div class="loader">
       <div class="loader_box">
         <div class="loader_box_animation"><i class="fas fa-blender fa-lg"></i></div>
         <h6 class="loader_box_content">Le chef prépare les menus</h6>
         <span class="loader_box_line"></span>
       </div>
-    </div>
+    </div> -->
     <header class="header">
       <h1>
         <img class="header_logo" src="images/logo/ohmyfood@2x.svg" />
       </h1>
     </header>
-    <div class="location">
+    <section class="location">
       <div class="location_marker"><i class="fas fa-map-marker-alt"></i></div>
       <div class="location_city">
         <select name="city" class="location_selector">
@@ -31,7 +31,7 @@
           <option value="Epinal">Epinal, Place des Vosges</option>
         </select>
       </div>
-    </div>
+    </section>
     <section class="reservation">
       <h2 class="reservation_h2">Réservez le menu qui vous convient</h2>
       <p class="reservation_p">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
@@ -70,7 +70,9 @@
     <main class="restaurants">
       <h2 class="restaurants_h2">Restaurants</h2>
           <article class="restaurants_card">
+            <a class="restaurants_card_redirection" href="/pages/la-palette-du-gout.html">
             <div class="restaurants_card_container">
+              <div class="restaurants_card_new"><p>Nouveau</p></div>
               <div class="restaurants_card_image_container">
                 <img class="restaurants_card_image--size" src="images/menus/la-palette-du-gout.jpg" />
               </div>
@@ -90,9 +92,12 @@
                 </svg>
               </div>
             </div>
+            </a>
           </article>
           <article class="restaurants_card">
+            <a class="restaurants_card_redirection" href="/pages/la-note-enchantee.html">
             <div class="restaurants_card_container">
+              <div class="restaurants_card_new"><p>Nouveau</p></div>
               <div class="restaurants_card_image_container">
                 <img class="restaurants_card_image--size" src="images/menus/la-note-enchantee.jpg" />
               </div>
@@ -112,8 +117,10 @@
                 </svg>
               </div>
             </div>
+          </a>
           </article>
           <article class="restaurants_card">
+            <a class="restaurants_card_redirection" href="/pages/a-la-francaise.html">
             <div class="restaurants_card_container">
               <div class="restaurants_card_image_container">
                 <img class="restaurants_card_image--size" src="images/menus/a-la-francaise.jpg" />
@@ -134,8 +141,10 @@
                 </svg>
               </div>
             </div>
+            </a>
           </article>
           <article class="restaurants_card">
+            <a class="restaurants_card_redirection" href="/pages/le-delice-des-sens.html">
             <div class="restaurants_card_container">
               <div class="restaurants_card_image_container">
                 <img class="restaurants_card_image--size" src="images/menus/le-delice-des-sens.jpg" />
@@ -156,6 +165,7 @@
                 </svg>
               </div>
             </div>
+            </a>
           </article>
       </div>
     </main>

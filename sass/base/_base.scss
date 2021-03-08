@@ -97,6 +97,7 @@ body {
     margin-top: 1rem;
     @include btn;
     transition: all 0.2s;
+    cursor: pointer;
   }
   &_btn:hover {
     transform: scale(1.02);
@@ -112,6 +113,7 @@ body {
     margin-left: 10%;
     margin-right: 10%;
     transition: all 0.3s;
+    cursor: pointer;
   }
   &_card:hover {
     background-color: $color-card-hover;
@@ -155,7 +157,14 @@ body {
     justify-content: flex-start;
     padding-left: 1rem;
   }
+  &_card_redirection {
+    @include a_without_style;
+  }
+  &_card_redirection:visited {
+    @include a_without_style;
+  }
   &_card {
+    cursor: pointer;
     @include flexcenter;
     margin: 0 1rem;
     transition: transform 1s;
@@ -172,6 +181,20 @@ body {
     max-width: 400px;
     overflow: hidden;
     box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 5%);
+  }
+  &_card_new {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    height: 1.5rem;
+    top: 5%;
+    right: 5%;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    background-color: $color-tertiary;
+    color: $color-tertiary-darken;
+    padding: 0.15rem 0.75rem;
   }
   &_card_image_container {
     display: absolute;
