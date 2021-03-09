@@ -60,6 +60,15 @@ body {
 }
 .header {
   @include flexcenter;
+  &_previous {
+    position: absolute;
+    left: 1rem;
+    top: 2rem;
+    a {
+      color: $color-footer;
+      text-decoration: none;
+    }
+  }
 }
 .location {
   @include flexcenter;
@@ -148,6 +157,47 @@ body {
     color: white;
     font-weight: normal;
     font-size: 0.8rem;
+  }
+}
+.presentation {
+  background-color: $color-back;
+  &_image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  &_menu_header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -50px;
+    background-color: $color-back;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    &_h2 {
+      padding-left: 1rem;
+      font-family: Shrikhand;
+      font-weight: normal;
+    }
+  }
+  &_menu_appetizer_h3 {
+    margin-left: 1rem;
+    // margin-top: 50px;
+    font-weight: 300;
+  }
+  &_menu_like {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+  &_menu_appetizer_underline {
+    margin-top: -1rem;
+    margin-left: 1rem;
+    width: 45px;
+    height: 3px;
+    background-color: $color-tertiary;
   }
 }
 .restaurants {
