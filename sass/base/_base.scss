@@ -109,8 +109,7 @@ body {
     cursor: pointer;
   }
   &_btn:hover {
-    transform: scale(1.02);
-    transition: all 0.2s;
+    @include btn-hover;
   }
 }
 .fonctionnement {
@@ -119,9 +118,10 @@ body {
   flex-direction: column;
   &_card {
     @include fonctionnement_card;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     transition: all 0.3s;
+    max-width: 95vw;
     cursor: pointer;
   }
   &_card:hover {
@@ -182,9 +182,9 @@ body {
       font-weight: normal;
     }
   }
-  &_menu_appetizer_h3 {
+  &_menu_h3 {
     margin-left: 1rem;
-    // margin-top: 50px;
+    margin-top: 50px;
     font-weight: 300;
   }
   &_menu_like {
@@ -192,12 +192,62 @@ body {
     right: 1.5rem;
     bottom: 1.5rem;
   }
-  &_menu_appetizer_underline {
-    margin-top: -1rem;
-    margin-left: 1rem;
-    width: 45px;
-    height: 3px;
-    background-color: $color-tertiary;
+  &_menu_underline {
+    @include underline_menu;
+  }
+  &_menu_card {
+    @include menu_card;
+    &_h3,
+    &_price {
+      margin: 0;
+    }
+    &_alt_description {
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+    }
+    &_p {
+      padding-right: 1rem;
+      margin: 0;
+      margin-top: 0.5rem;
+      height: 100%;
+    }
+  }
+  &_menu_card:hover {
+    padding-right: 100px;
+    transition: 1s;
+  }
+  &_menu_card_check {
+    @include menu_card-check;
+    &_icon {
+      transform: rotate(360deg);
+      transition: transform 1s;
+    }
+  }
+  &_menu_card:hover &_menu_card_check_icon {
+    transform: rotate(-360deg);
+    transition: transform 1s;
+  }
+  &_menu_card:hover &_menu_card_check {
+    right: 0;
+    transition: right 1s;
+  }
+  &_menu_card:hover &_menu_card_p,
+  &_menu_card_h3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &_btn {
+    @include flexcenter;
+    padding: 3rem 0;
+  }
+  &_btn_order {
+    @include btn;
+    padding: 1rem 3.5rem;
+  }
+  &_btn_order:hover {
+    @include btn-hover;
   }
 }
 .restaurants {
@@ -228,7 +278,7 @@ body {
     background-color: white;
     border-radius: 25px;
     margin-bottom: 1rem;
-    max-width: 400px;
+    max-width: 95vw;
     overflow: hidden;
     box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 5%);
   }
@@ -237,8 +287,8 @@ body {
     align-items: center;
     position: absolute;
     height: 1.5rem;
-    top: 5%;
-    right: 5%;
+    top: 1rem;
+    right: 1rem;
     font-size: 14px;
     font-weight: 500;
     border-radius: 3px;

@@ -267,6 +267,7 @@ body {
   padding: 1rem;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  text-decoration: none;
   transition: all 0.2s;
   cursor: pointer;
 }
@@ -281,14 +282,15 @@ body {
   flex-direction: column;
 }
 .fonctionnement_card {
-  width: 80%;
+  max-width: 90%;
   background-color: #f6f6f6;
   margin-bottom: 1rem;
   border-radius: 15px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
   transition: all 0.3s;
+  max-width: 95vw;
   cursor: pointer;
 }
 .fonctionnement_card:hover {
@@ -352,8 +354,9 @@ body {
   font-family: Shrikhand;
   font-weight: normal;
 }
-.presentation_menu_appetizer_h3 {
+.presentation_menu_h3 {
   margin-left: 1rem;
+  margin-top: 50px;
   font-weight: 300;
 }
 .presentation_menu_like {
@@ -361,12 +364,89 @@ body {
   right: 1.5rem;
   bottom: 1.5rem;
 }
-.presentation_menu_appetizer_underline {
+.presentation_menu_underline {
   margin-top: -1rem;
   margin-left: 1rem;
   width: 45px;
   height: 3px;
   background-color: #99e2d0;
+}
+.presentation_menu_card {
+  margin: 1rem;
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+  overflow-x: hidden;
+  transition: all 1s;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.presentation_menu_card_h3, .presentation_menu_card_price {
+  margin: 0;
+}
+.presentation_menu_card_alt_description {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.presentation_menu_card_p {
+  padding-right: 1rem;
+  margin: 0;
+  margin-top: 0.5rem;
+  height: 100%;
+}
+.presentation_menu_card:hover {
+  padding-right: 100px;
+  transition: 1s;
+}
+.presentation_menu_card_check {
+  background-color: #99e2d0;
+  position: absolute;
+  top: 0;
+  padding: 0 2rem;
+  right: -150px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+.presentation_menu_card_check_icon {
+  transform: rotate(360deg);
+  transition: transform 1s;
+}
+.presentation_menu_card:hover .presentation_menu_card_check_icon {
+  transform: rotate(-360deg);
+  transition: transform 1s;
+}
+.presentation_menu_card:hover .presentation_menu_card_check {
+  right: 0;
+  transition: right 1s;
+}
+.presentation_menu_card:hover .presentation_menu_card_p, .presentation_menu_card_h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.presentation_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+.presentation_btn_order {
+  border-radius: 30px;
+  background: linear-gradient(350deg, #9356dc, #ff79da);
+  color: white;
+  padding: 1rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 3.5rem;
+}
+.presentation_btn_order:hover {
+  transform: scale(1.02);
+  transition: all 0.2s;
 }
 
 .restaurants {
@@ -402,7 +482,7 @@ body {
   background-color: white;
   border-radius: 25px;
   margin-bottom: 1rem;
-  max-width: 400px;
+  max-width: 95vw;
   overflow: hidden;
   box-shadow: 10px 10px 10px 20px rgba(0, 0, 0, 0.05);
 }
@@ -411,8 +491,8 @@ body {
   align-items: center;
   position: absolute;
   height: 1.5rem;
-  top: 5%;
-  right: 5%;
+  top: 1rem;
+  right: 1rem;
   font-size: 14px;
   font-weight: 500;
   border-radius: 3px;

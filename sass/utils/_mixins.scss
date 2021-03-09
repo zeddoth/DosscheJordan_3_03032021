@@ -6,6 +6,11 @@
   padding: 1rem;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 10%);
   text-align: center;
+  text-decoration: none;
+}
+@mixin btn-hover {
+  transform: scale(1.02);
+  transition: all 0.2s;
 }
 @mixin flexcenter {
   display: flex;
@@ -13,7 +18,7 @@
   align-items: center;
 }
 @mixin fonctionnement_card {
-  width: 80%;
+  max-width: 90%;
   background-color: $color-back;
   margin-bottom: 1rem;
   border-radius: 15px;
@@ -22,4 +27,33 @@
 @mixin a_without_style {
   text-decoration: none;
   color: black;
+}
+@mixin underline_menu {
+  margin-top: -1rem;
+  margin-left: 1rem;
+  width: 45px;
+  height: 3px;
+  background-color: $color-tertiary;
+}
+@mixin menu_card {
+  margin: 1rem;
+  position: relative;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+  overflow-x: hidden;
+  transition: all 1s;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+@mixin menu_card_check {
+  background-color: $color-tertiary;
+  position: absolute;
+  top: 0;
+  padding: 0 2rem;
+  right: -150px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: 1s;
 }
