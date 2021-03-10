@@ -168,6 +168,10 @@ body {
   color: #353535;
   text-decoration: none;
 }
+.header_logo {
+  height: 34px;
+  width: 196px;
+}
 
 .heart-main {
   width: 1.5rem;
@@ -545,6 +549,7 @@ body {
   padding-bottom: 1.5rem;
   padding-top: 1.5rem;
   height: 1rem;
+  width: auto;
   filter: invert(1);
 }
 
