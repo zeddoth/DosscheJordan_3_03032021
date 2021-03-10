@@ -11,6 +11,8 @@
 @mixin btn-hover {
   transform: scale(1.02);
   transition: all 0.2s;
+  background: linear-gradient(350deg, lighten($color-primary, 3), lighten($color-secondary, 3));
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 20%);
 }
 @mixin flexcenter {
   display: flex;
