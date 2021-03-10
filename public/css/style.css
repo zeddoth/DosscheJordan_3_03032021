@@ -303,6 +303,8 @@ body {
 }
 
 .presentation {
+  display: flex;
+  flex-direction: column;
   background-color: #f6f6f6;
 }
 .presentation_image {
@@ -311,7 +313,6 @@ body {
   object-fit: cover;
 }
 .presentation_menu_header {
-  position: absolute;
   width: 100%;
   display: flex;
   align-items: center;
@@ -372,13 +373,13 @@ body {
   animation: smooth-slideup linear 2s backwards;
 }
 .presentation_menu_card:nth-child(2) {
-  animation: smooth-slideup linear 2s 0.2s backwards;
+  animation: smooth-slideup linear 2s 0.3s backwards;
 }
 .presentation_menu_card:nth-child(3) {
-  animation: smooth-slideup linear 2s 0.4s backwards;
+  animation: smooth-slideup linear 2s 0.6s backwards;
 }
 .presentation_menu_card:nth-child(4) {
-  animation: smooth-slideup linear 2s 0.6s backwards;
+  animation: smooth-slideup linear 2s 0.9s backwards;
 }
 .presentation_menu_card:hover {
   padding-right: 100px;
