@@ -75,17 +75,20 @@ body {
   width: 1.5rem;
   height: 1.5rem;
   overflow: visible;
-  fill: transparent;
+  fill: url(#Gradient1);
+  fill-opacity: 0;
   stroke: black;
   stroke-width: 15px;
+  transition: all 1s;
   cursor: pointer;
-}
-.heart-main:hover {
-  overflow: visible;
-  fill: url(#Gradient1);
-  stroke-opacity: 0;
-  animation: pulse-heart 1s;
-  transition: stroke-opacity 1s, fill 1s;
+  &:hover {
+    overflow: visible;
+    fill-opacity: 1;
+    fill: url(#Gradient1);
+    stroke-opacity: 0;
+    animation: pulse-heart 1s;
+    transition: stroke-opacity 1s, fill-opacity 1s;
+  }
 }
 .location {
   @include flexcenter;
@@ -323,7 +326,7 @@ body {
     font-weight: 500;
     border-radius: 3px;
     background-color: $color-tertiary;
-    color: $color-tertiary-darken;
+    color: darken($color-tertiary, 30);
     padding: 0.15rem 0.75rem;
   }
   &_card_image_container {
