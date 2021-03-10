@@ -307,8 +307,6 @@ body {
 }
 
 .presentation {
-  display: flex;
-  flex-direction: column;
   background-color: #f6f6f6;
 }
 .presentation_image {
@@ -317,6 +315,7 @@ body {
   object-fit: cover;
 }
 .presentation_menu_header {
+  position: absolute;
   width: 100%;
   display: flex;
   align-items: center;
