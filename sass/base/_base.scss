@@ -231,16 +231,16 @@ body {
     }
   }
   &_menu_card:nth-child(1) {
-    animation: smooth-slideup linear 2s;
+    animation: smooth-slideup linear 2s backwards;
   }
   &_menu_card:nth-child(2) {
-    animation: smooth-slideup linear 2s 0.2s;
+    animation: smooth-slideup linear 2s 0.2s backwards;
   }
   &_menu_card:nth-child(3) {
-    animation: smooth-slideup linear 2s 0.4s;
+    animation: smooth-slideup linear 2s 0.4s backwards;
   }
   &_menu_card:nth-child(4) {
-    animation: smooth-slideup linear 2s 0.6s;
+    animation: smooth-slideup linear 2s 0.6s backwards;
   }
   &_menu_card:hover {
     padding-right: 100px;
