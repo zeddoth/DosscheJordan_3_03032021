@@ -167,6 +167,7 @@ body {
   }
   &_card_icon {
     padding: 0 1rem;
+    color: grey;
   }
   &_card_number {
     @include flexcenter;
@@ -258,6 +259,7 @@ body {
     &_icon {
       transform: rotate(360deg);
       transition: transform 1s;
+      color: white;
     }
   }
   &_menu_card:hover &_menu_card_check_icon {
@@ -274,7 +276,6 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-
   &_btn {
     @include flexcenter;
     padding: 3rem 0;

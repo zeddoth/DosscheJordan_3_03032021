@@ -135,7 +135,8 @@ body {
   height: 50px;
   width: 50px;
 }
-.loader-ball:before, .loader-ball:after {
+.loader-ball:before,
+.loader-ball:after {
   border-radius: 50%;
   content: "";
   display: block;
@@ -288,6 +289,7 @@ body {
 }
 .fonctionnement_card_icon {
   padding: 0 1rem;
+  color: grey;
 }
 .fonctionnement_card_number {
   display: flex;
@@ -358,7 +360,8 @@ body {
   transition: all 1s;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
-.presentation_menu_card_h3, .presentation_menu_card_price {
+.presentation_menu_card_h3,
+.presentation_menu_card_price {
   margin: 0;
 }
 .presentation_menu_card_alt_description {
@@ -402,6 +405,7 @@ body {
 .presentation_menu_card_check_icon {
   transform: rotate(360deg);
   transition: transform 1s;
+  color: white;
 }
 .presentation_menu_card:hover .presentation_menu_card_check_icon {
   transform: rotate(-360deg);
@@ -411,7 +415,8 @@ body {
   right: 0;
   transition: right 1s;
 }
-.presentation_menu_card:hover .presentation_menu_card_p, .presentation_menu_card_h3 {
+.presentation_menu_card:hover .presentation_menu_card_p,
+.presentation_menu_card_h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
