@@ -313,7 +313,6 @@ body {
     @include a_without_style;
   }
   &_card {
-    @include flexcenter;
     margin: 0 1rem;
     transition: transform 1s;
   }
