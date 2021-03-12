@@ -499,7 +499,6 @@ body {
   padding: 0.15rem 0.75rem;
 }
 .restaurants_card_image_container {
-  display: absolute;
   height: 70%;
   width: 100%;
   object-fit: cover;
